@@ -1,0 +1,49 @@
+<%= form_for(@concert, html: {class: 'form-horizontal', style: 'margin-top: 20px'}) do |f| %>
+  <% if @concert.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@concert.errors.count, "error") %> prohibited this concert from being saved:</h2>
+
+      <ul>
+      <% @concert.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= f.label "Artist:", class: 'col-sm-1 control-label' %>
+    <div class="col-sm-3">
+      <%= f.text_field :name, class: 'form-control input-sm'%>
+    </div>
+  </div>
+  <div class="field form-group">
+    <%= f.label "City:", class: 'col-sm-1 control-label' %>
+    <div class="col-sm-3">
+      <%= f.text_field :city, class: 'form-control input-sm'%>
+    </div>
+  </div>
+  <div class="field form-group">
+    <%= f.label "Venue:", class: 'col-sm-1 control-label' %>
+    <div class="col-sm-3">
+      <%= f.text_field :venue, class: 'form-control input-sm'%>
+    </div>
+  </div>
+  <div class="field form-group">
+      <%= f.label "BANGER:", class: 'col-sm-1 control-label' %>
+      <div class="col-sm-3">
+        <%= f.text_field :media, class: 'form-control input-sm'%>
+      </div>
+    </div>
+  <div class="field form-group">
+    <%= f.label "Date:", class: 'col-sm-1 control-label' %>
+    <div class="col-sm-4" style="margin-top:7px">
+      <%= f.datetime_select :start_time, class: 'form-control'%>
+    </div>
+  </div>
+  <div class="actions form-group" style="margin-top:20px">
+    <div class="col-sm-10">
+      <%= f.submit class: 'btn btn-primary' %>
+    </div>
+  </div>
+<% end %>

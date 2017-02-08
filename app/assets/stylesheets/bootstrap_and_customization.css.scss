@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+$body-bg:  #34495e;
+$font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height: 45px;
+$navbar-default-bg: #2c3e50;
+$navbar-default-link-color: white;
+$navbar-default-link-hover-color: #bdc3c7;
+$navbar-default-brand-color: #ecf0f1;
+$brand-primary: #16a085;
+$jumbotron-bg: #ecf0f1;
+
+
+@import 'bootstrap';
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-weight: bold;
+}
+
+.calendar-heading {
+	margin: 30px 0px 10px 0px;
+}
+
+.calendar-heading a {
+	color: #a94442;
+}
+
+.calendar-heading a:visited {
+	color: #a94442;
+}
+
+.calendar-heading a:hover {
+	color: #a94442;
+	background-color: transparent;
+}
+
+.prev-month {
+	background: #e2c8c8;
+}
+
+.next-month {
+	background: #e2c8c8;
+}
+
+.today {
+    background: cadetblue;
+}
+
+th {
+	text-align: left;
+}
+
+.calendar-title {
+	font-size: large;
+	margin: 0px 10px 0px 10px;
+}
+
+.simple-calendar {
+    width: 100%;
+}
+
+.simple-calendar td {
+	height: 75px;
+	width: 14.28%;
+	text-align:left;
+}
+
+.container {
+    width: 100%;
+}
+
+.table-striped {
+	margin:0px !important;
+
+	background-color: aliceblue;
+}
+.table-striped thead {
+    background: ivory;
+}

@@ -1,0 +1,30 @@
+<h1>Concert Details</h1>
+
+<p>
+  <strong>Artist:</strong>
+  <%= @concert.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @concert.city %>
+</p>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @concert.venue %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @concert.start_time_date %>
+</p>
+
+<p>
+  <strong>BANGER:</strong><br>
+  <%= @concert.media.html_safe %>
+</p>
+
+
+<%= link_to 'Edit', edit_concert_path(@concert) %> |
+<%= link_to 'Back', concerts_path %>
